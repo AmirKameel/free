@@ -20,8 +20,8 @@ retrying
 mailgw_temporary_email
 pycryptodome
 random-password-generator
-numpy>=1.22.2 # pinned to avoid a vulnerability
-tornado>=6.3.2 # pinned to avoid a vulnerability
+numpy # pinned to avoid a vulnerability
+tornado # pinned to avoid a vulnerability
 PyExecJS
 browser_cookie3
 Gunicorn
