@@ -1,4 +1,4 @@
-pyhton ==3.8
+python==3.8
 websocket-client
 requests
 tls-client
