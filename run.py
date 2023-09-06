@@ -8,6 +8,7 @@ from json import load
 from flask import Flask
 
 if __name__ == '__main__':
+    
 
     # Load configuration from config.json
     config = load(open('config.json', 'r'))
@@ -42,4 +43,4 @@ if __name__ == '__main__':
     # Register the blueprint
     app.register_blueprint(bp, url_prefix=url_prefix)
 
-   app.run(host="0.0.0.0" , port=5000)
+    app.run(host="0.0.0.0" , port=5000)
