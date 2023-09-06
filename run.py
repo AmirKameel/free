@@ -8,7 +8,6 @@ from json import load
 from flask import Flask
 
 if __name__ == '__main__':
-    
 
     # Load configuration from config.json
     config = load(open('config.json', 'r'))
@@ -44,6 +43,6 @@ if __name__ == '__main__':
     app.register_blueprint(bp, url_prefix=url_prefix)
 
     # Run the Flask server
-    
-    app.run(host="0.0.0.0" , port=5000)
-  
+    print(f"Running on {site_config['port']}{url_prefix}")
+    app.run(**site_config)
+    print(f"Closing port {site_config['port']}")
