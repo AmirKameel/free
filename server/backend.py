@@ -75,9 +75,7 @@ def build_messages(jailbreak):
         search_results = fetch_search_results(query)
         conversation.extend(search_results)
 
-    # Add jailbreak instructions if enabled
-    if jailbreak_instructions := getJailbreak(jailbreak):
-        conversation.extend(jailbreak_instructions)
+ 
 
     # Add the prompt
     conversation.append(prompt)
